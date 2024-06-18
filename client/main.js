@@ -1,9 +1,9 @@
 import './styles.css';
-import  {listBroths}  from './public/src/components/broths.js';
-import {listProteins} from './public/src/components/proteins.js';
-import {scrollWidgetBroth} from './public/src/components/widgetbroth.js';
-import {scrollWidgetProtein} from './public/src/components/widgetprotein.js';
-import {buttonPlaceMyOrder} from './public/src/components/buttonPlaceMyOrder.js'
+import  {listBroths}  from './src/components/broths.js';
+import {listProteins} from './src/components/proteins.js';
+import {scrollWidgetBroth} from './src/components/widgetbroth.js';
+import {scrollWidgetProtein} from './src/components/widgetprotein.js';
+import {buttonPlaceMyOrder} from './src/components/buttonPlaceMyOrder.js'
 
 document.querySelector('#app').innerHTML = `
   <div>    
