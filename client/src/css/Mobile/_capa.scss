@@ -1,0 +1,110 @@
+
+#container_principal{
+    @include setContainerCapa($MaxWidthMobile, 964px, $ImageBackground);
+}
+
+#container_principal_sucess{
+    @include setContainerCapa($MaxWidthMobile, 677px, '/public/images/backgroundAzul.png');
+}
+
+.logo{
+    @include setWidthHeight(125px, 16px);
+    @include setPositionRelative(20px, auto, auto, auto);
+    background-image: url($ImageLogo);
+    background-size: cover; 
+    background-position: center;
+}
+
+#container_capa{
+    @include setflexDirectionAlignJustifyWrap(row, auto, center, nowrap);
+    @include setPositionRelative(60px, auto, auto, auto);
+    @include setWidthHeight(575px, 381px);
+}
+
+#container_capa_sucess{
+    @include setflexDirectionAlignJustifyWrap(column, center, flex-start, nowrap);
+    @include setPositionRelative(auto, auto, auto, auto);
+}
+
+.circulo-marrom{
+    @include setflexDirectionAlignJustifyWrap(row, center, center, nowrap);
+    @include setWidthHeight(70%, 100%);
+    background: #730000; 
+    border-radius: 50%;
+}
+
+.entregadora{
+    @include setWidthHeight(380.3px, 446px);
+    @include setPositionRelative(13px, auto, auto, auto);
+    background-image: url($ImageEntregadora);
+    background-size: cover; 
+    background-position: center;
+}
+
+.balaoAzul{
+    @include setWidthHeight(56px, 54px);
+    @include setPositionAbsolute(-20px, auto, auto, 111px);
+    background-image: url($BalaoAzul);
+    background-size: cover; 
+    background-position: center;
+}
+
+.balaoAmarelo{
+    @include setWidthHeight(53.75px, 125.31px);
+    @include setPositionAbsolute(135px, 56px, auto, auto);
+    background-image: url($BalaoAmarelo);
+    background-size: cover; 
+    background-position: center;
+}
+
+.letras-amarelas{
+    @include setWidthHeight(auto, 54px);
+    @include setFontSizeFontWeightLineHeight(74px, 900, 56px);
+    @include setPositionAbsolute(443px, auto, auto, auto);
+    color: $YellowDefault;
+}
+
+.title-go{
+    @include setWidthHeight(auto, 100px);
+    @include setPositionAbsolute(552px, auto, auto, auto);
+    @include setFontSizeFontWeightLineHeight(185px, 900, 100px);
+    color: $WhiteDefault;
+}
+
+.description{
+    @include setPositionAbsolute(700px, auto, auto, auto);
+    @include setFontSizeFontWeightLineHeight(24px, 400, 33px);
+    width: 657px;
+    letter-spacing: 4px;
+    &::before{
+        content: 'Enjoy a good ramen in the comfort of \A your house. Create your own ramen and \A choose your favorite flavour \A combination!';
+        white-space: pre-line;
+        color: $WhiteDefault;
+    }
+}
+
+.image-broth-selected_sucess{
+    @include setWidthHeight(338px, 374px);
+}
+
+.title-broth-selected_sucess{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    color: $White;
+}
+
+.title-broth-selected_sucess{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    color: $White;
+}
+
+.name-broth-selected-sucess{
+    @include setWidthHeight(270px, 64px);
+    @include setFontSizeFontWeightLineHeight(24px, 900, 32px);
+    @include setPositionRelative(15px, auto, auto, auto);
+    color: $YellowDefault;
+}
+
+#button_order_now{
+    display: none;
+}
+

@@ -1,0 +1,98 @@
+#container_principal{
+    @include setContainerCapaDesktop($ImageBackground);
+    @include setContainerCapa(auto, auto, $ImageBackground);
+    height: 768px;
+}
+
+.logo{
+    @include setWidthHeight(124.69px, 15.67px);
+    @include setPositionAbsolute(40.33px, 0px, 0px, 40px);
+    background-image: url($ImageLogo);
+    background-size: cover; 
+    background-position: center;
+}
+
+#container_capa{
+    @include setflexDirectionAlignJustifyWrap(row, center, center, nowrap);
+    @include setPositionRelative(60px, auto, auto, auto);
+    @include setWidthHeight(576px, 633px);
+}
+
+.circulo-marrom{
+    @include setflexDirectionAlignJustifyWrap(row, center, center, nowrap);
+    background: #730000; 
+    border-radius: 50%;
+    @include setWidthHeight(587px, 587px);
+}
+
+.entregadora{
+    @include setWidthHeight(411px, 669px);
+    @include setPositionRelative(13px, auto, auto, auto);
+    background-image: url($ImageEntregadora);
+    background-size: cover; 
+    background-position: center;
+}
+
+.balaoAzul{
+    @include setWidthHeight(116px, 129px);
+    @include setPositionAbsolute(-20px, auto, auto, -29px);
+    background-image: url($BalaoAzul);
+    background-size: cover; 
+    background-position: center;
+}
+
+.balaoAmarelo{
+    @include setWidthHeight(106px, 242px);
+    @include setPositionAbsolute(224px, -54px, auto, auto);
+    background-image: url($BalaoAmarelo);
+    background-size: cover; 
+    background-position: center;
+}
+
+.letras-amarelas{
+    @include setWidthHeight(48px, 224px);
+    @include setPositionAbsolute(130px, 730px, auto, auto);
+    @include setFontSizeFontWeightLineHeight(48px, 900, 56px);
+    color: $YellowDefault;
+}
+
+.title-go{
+    @include setWidthHeight(308px, 100px);
+    @include setPositionAbsolute(229px, auto, auto, -137px);
+    @include setFontSizeFontWeightLineHeight(160px, 900, 100px);
+    color: $WhiteDefault;
+}
+
+.description{
+    @include setPositionAbsolute(367px, 483px, auto, auto);
+    @include setFontSizeFontWeightLineHeight(17px, 400, 33px);
+    text-align: left;
+    width: 293px;
+    line-height: 33px;
+    &::before{
+        content: 'Enjoy a good ramen in the comfort of your house. \A Create your own ramen \A and choose your favorite \A flavour combination!';
+        white-space: pre-line;
+        color: $WhiteDefault;
+    }
+}
+
+#button_order_now{
+    @include setWidthHeight(213px, 60px);
+    @include setPositionAbsolute(auto, auto, 22px, -188px);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $BlueDefault;
+}
+
+.text-button-place-order-now{
+    @include setFontSizeFontWeightLineHeight(14px, 800, 20.79px);
+    font-family: 'FonteDefault';
+    color: #FFFFFF;
+    letter-spacing: 1.7799999713897705px;
+    margin-right: 14px;
+}

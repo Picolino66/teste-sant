@@ -1,0 +1,158 @@
+#container_body{
+    @include setflexDirectionAlignJustifyWrap(column, center, normal, wrap);
+    @include setPositionRelative(50px, auto, auto, auto);
+    @include setWidthHeight(980px, auto);
+}
+
+#button_order_container{
+    margin: 40px;
+}
+
+#button_new_order_container{
+    margin: 40px;
+}
+
+#button_order{
+    @include setWidthHeight(213px, 60px);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center
+}
+
+.button-active{
+    background-color: $BlueDefault;
+}
+
+.button-disabled{
+    background-color: #C5C5C5;
+}
+
+.text-button-place-order{
+    @include setFontSizeFontWeightLineHeight(14px, 800, 20.79px);
+    font-family: 'FonteDefault';
+    color: #FFFFFF;
+    letter-spacing: 1.7799999713897705px;
+    margin-right: 14px;
+}
+
+// Body index
+
+#title_select_broth{
+    @include setFontSizeFontWeightLineHeight(24px, 900, 31px);
+    color: $BlackDefault;
+}
+
+#subtitle_select_broth{
+    @include setFontSizeFontWeightLineHeight(15px, 400, 24px);
+    color: $BlackDefault;
+    margin-top: 20px;
+}
+
+
+#container_select_protein, #container_select_broth{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 780px;
+    margin-top: 40px;
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+.card{
+    min-width: 725px;
+    height: 400px;
+    background-color: $WhiteDefault;
+    filter: drop-shadow(0 -1mm 4mm 	rgba(233, 232, 227, 0.846));
+    border-radius: 12px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-card {
+    background-color: $BlueDefault;
+}
+
+.title-card{
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(10px, auto, auto, auto);
+    color: $BlueDefault;
+}
+
+.selected-title-card{
+    color: $White;
+}
+
+.description-card{
+    color: $BlackDefault;;
+    @include setFontSizeFontWeightLineHeight(10px, 400, 16px);
+    @include setPositionRelative(15px, auto, auto, auto);
+}
+
+.selected-description-card{
+    color: $White;
+}
+
+.price-card{
+    color: $OrangeDefault;
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+    @include setPositionRelative(35px, auto, auto, auto);
+}
+
+.selected-price-card{
+    color: $YellowDefault;
+}
+
+.container-widget{
+    position: relative;
+    right: 30px;
+}
+
+.widget-scroll-cards{
+    display: flex;
+}
+
+.widget-circle-select-broths, .widget-circle-select-proteins{
+    background: #E0DBBF; 
+    border-radius: 50%; 
+    margin-right: 10px;
+    @include setWidthHeight(12px, 12px);
+}
+
+.widget-selected {
+    background-color: #FF4E42;
+    border-radius: 8px;
+    @include setWidthHeight(36px, 12px);
+}
+
+// Body Sucess
+
+#title_icon_client{
+    color: $YellowDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(20px, 900, 24px);
+}
+
+#resp_title_message_order{
+    color: $OrangeDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(24px, 900, 32px);
+    @include setWidthHeight(325px, 66px);
+}
+
+#resp_description_message_order{
+    color: $BlackDefault;
+    margin-top: 20px;
+    @include setFontSizeFontWeightLineHeight(16px, 400, 24px);
+    @include setWidthHeight(325px, 48px);
+}
+
