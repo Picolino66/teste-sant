@@ -1,4 +1,4 @@
-import './src/css/styles.css';
+import '../css/styles.css';
 import {order} from './src/components/order.js';
 import {setSVG} from '/src/svg/bowing.js';
 import {buttonPlaceNewOrder} from './src/components/buttonNewOrder';
