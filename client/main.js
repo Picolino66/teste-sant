@@ -1,4 +1,4 @@
-import './styles.css';
+import './src/css/styles.css';
 import  {listBroths}  from './src/components/broths.js';
 import {listProteins} from './src/components/proteins.js';
 import {scrollWidgetBroth} from './src/components/widgetbroth.js';
