@@ -1,6 +1,6 @@
-import '../css/styles.css';
-import {order} from './src/components/order.js';
-import {setSVG} from '/src/svg/bowing.js';
+import '/public/src/css/styles.css';
+import {order} from '/public/src/components/order.js';
+import {setSVG} from '/public/src/svg/bowing.js';
 import {buttonPlaceNewOrder} from './src/components/buttonNewOrder';
 
 document.querySelector('#app').innerHTML = `
