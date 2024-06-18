@@ -10,7 +10,7 @@ export async function listProteins(element) {
     //methods
     async function get(){
         try{
-            proteins = await PostService.getPosts(linkLocal);
+            proteins = await PostService.getPosts(linkApi);
         } catch(err){
             console.log(err)
         }

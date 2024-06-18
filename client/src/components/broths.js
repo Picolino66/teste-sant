@@ -10,7 +10,7 @@ export async function listBroths(element) {
     //methods
     async function get(){
         try{
-            broths = await PostService.getPosts(linkLocal);
+            broths = await PostService.getPosts(linkApi);
         } catch(err){
             console.log(err)
         }

@@ -39,7 +39,7 @@ export async function buttonPlaceMyOrder(element){
         try{
             let linkApi = '/api/orders'
             let linkLocal = 'http://localhost:3000/api/orders'
-            order = await PostService.insertPost(linkLocal, orderSelected);
+            order = await PostService.insertPost(linkApi, orderSelected);
             console.log(order);
 
             sessionStorage.setItem('orderData', JSON.stringify(order));
